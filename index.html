@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family.." rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+<a href="#" class="logo">Graphic Designer</a>
+<div class="toggle" onclick="toggleMenu();"></div>
+<ul class="menu">
+	<li> <a href="#home" onclick="toggleMenu();">Главная</a></li>
+	<li> <a href="#about" onclick="toggleMenu();">Обо мне</a></li>
+	<li> <a href="#services" onclick="toggleMenu();">Навыки</a></li>
+	<li> <a href="#work" onclick="toggleMenu();">Работы</a></li>
+	<li> <a href="#contacts" onclick="toggleMenu();">Контакты</a></li>
+</ul>
+</header>
+<section class="banner" id="home">
+	<div class="content">
+		<div class="w50">
+			<img src="img/banner_photo.png" class="img">
+		</div>
+		<div class="contentBx w50">
+			<h2>
+				web-designer
+			</h2>
+			<h3>
+				Создаю сайты и логотипы, <br> благодаря которым вы<br> зарабатываете!
+			</h3>
+		</div>
+	</div>
+</section>
+
+<section id="about" class="about">
+	<div class="heading">
+		<h2>
+			Обо мне
+		</h2>
+	</div>
+		<div class="content">
+			<div class="w50">
+				<img src="img/photo_2.png" class="img">
+			</div>
+			<div class="contentBx w50">
+				<p>
+					Меня зовут Пестова Анна<br>
+					Я - дизайнер с высшим образованием,<br>
+					постоянно прохожу курсы по смежным<br> специальностям, которые совершенствуют<br>
+					мои знания в этой области.
+				</p>
+				<p>
+					Ответственно подхожу к каждому<br>
+					проекту, учитываю все пожелания<br> в работе.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="services" class="services">
+	<div class="heading">
+		<h2>
+			Навыки
+		</h2>
+	</div>	
+	<div class="content">
+		<div class="servicesBx">
+			<img src="img/des_f.png">
+			<h2>
+				Дизайн-макет сайта
+			</h2>
+		</div>
+		<div class="servicesBx">
+			<img src="img/dev_f.png">
+			<h2>
+				Сайт под ключ
+			</h2>
+		</div>
+		<div class="servicesBx">
+			<img src="img/ph_f.png">
+			<h2>
+				Проф. фотографии
+			</h2>
+		</div>
+		<div class="servicesBx">
+			<img src="img/log.png">
+			<h2>
+				Логотипы
+			</h2>
+		</div>
+	</div>
+</section>
+
+<section id="work" class="work">
+	<div class="heading">
+		<h2>
+			Кейсы и работы
+		</h2>
+	</div>
+	<div class="content">
+		<div class="workBx">
+			<img src="img/image 7.jpg">
+		</div>
+		<div class="workBx">
+			<img src="img/image 8.jpg">
+		</div>
+		<div class="workBx">
+			<img src="img/image 9.jpg">
+		</div>
+		<div class="workBx">
+			<img src="img/image 10.jpg">
+		</div>
+	</div>
+</section>
+
+<section id="contacts" class="contacts">
+	<div class="heading">
+		<h2>
+			Контакты
+		</h2>
+	</div>
+	<div class="content">
+		<div class="contactInfoBx">
+			<div class="box">
+				<div class="icon">
+					<img src="img/phone.png">
+				</div>
+				<div class="text">
+					<h3>Телефон</h3>
+					<p>+79202494416</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon">
+					<img src="img/email.png">
+				</div>
+				<div class="text">
+					<h3>Email</h3>
+					<p>annamorozova157@mail.ru</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon">
+					<img src="img/inst.png">
+				</div>
+				<div class="text">
+					<h3>Instagram</h3>
+					<p>just_smile_3001</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="heading">
+		<h2 style="color: #696969; letter-spacing: 0;font-size: 1em; font-weight: normal;margin-bottom: 5vh">
+			Давайте начнем Ваш проект вместе!
+		</h2>
+	</div>
+</section>
+
+<script type="text/javascript">
+	window.addEventListener('scroll', function (){
+		var header = document.querySelector('header');
+		header.classList.toggle('sticky',window.scrollY > 0);
+	})
+
+	function toggleMenu(){
+		var menuToggles = document.querySelector('.toggle');
+		var menu = document.querySelector('.menu');
+		menuToggles.classList.toggle('active');
+		menu.classList.toggle('active');
+	}
+</script>
+</body>
+</html>
