@@ -1,0 +1,434 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+header .logo{
+	color: #fff;
+	font-size: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.banner{
+	background: #DBE4E0;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section{
+	padding: 100px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header.sticky{
+	background: #DFEAE5;
+	padding: 30px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .sticky{
+	color: #DFEAE5;
+}
+header ul{
+	position: relative;
+	display: flex;
+	padding-bottom: 0;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	display:flex;
+	margin: 0 45px;
+	color: #696969;
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 0.08em;
+}
+.design{
+	position: absolute;
+	right: 5px;
+	bottom: 20px;
+}
+
+.heading{
+	width:100%;
+	text-align: center;
+	margin-bottom: 30px;
+	line-height: 1.5em;
+	letter-spacing: 0.08em;
+	font-size: 2em;
+}
+
+.about .heading h2{
+	color: #B5CEC3;
+}
+
+.content{
+	justify-content: space-between;
+	display: flex;
+}
+
+.contentBx p{
+	color: #696969;
+	line-height: 1.5em;
+	font-size: 20px;
+	letter-spacing: 0.08em;
+	margin-top: 30px;
+}
+
+.banner .contentBx h2{
+	text-decoration: underline;
+	color: #C0B5CE;
+	line-height: 1.5em;
+	font-size: 4em;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin-top: 30px;
+	padding-left: 30%;
+}
+
+.banner .contentBx h3{
+	text-decoration: none;
+	color: #696969;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	letter-spacing: 0.08em;
+	margin-top: 30px;
+	padding-left: 30%;
+}
+
+.w50{
+	min-width: 50%;
+}
+
+.banner img{
+	padding-left: 10%;
+	max-width: 150%;
+}
+
+.about img{
+	padding-left: 40%;
+	max-width: 100%;
+}
+
+.services{
+	background: #B5CEC3;
+	position: relative;
+	min-height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+}
+.services .heading{
+	color: #696969;
+
+}
+.services .content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+.services .content .servicesBx{
+	padding: 30px 20px;
+	background: #FCDDEC;
+	color: #696969;
+	width: 550px;
+	max-width: 550px;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.services .content .servicesBx:hover{
+	background: #C0B5CE;
+}
+.services .content .servicesBx img{
+	max-width: 200px;
+	filter: invert(1);
+}
+.services .content .servicesBx h2{
+	font-size: 25px;
+	font-weight: 600;
+	width: auto;
+
+}
+
+.work .heading {
+	color: #B5CEC3;
+}
+.work .content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.work .content .workBx{
+	width: 50%;
+	padding: 40px;
+}
+.work .content .workBx .img{
+	max-width: 100%;
+}
+
+
+
+.contactInfo{
+	min-width: 40%;
+}
+
+.contactInfo h3{
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.contactInfoBx{
+	position: relative;
+}
+
+.contactInfoBx .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.contactInfoBx .box .icon{
+	min-width: 40px;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.contactInfoBx .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #818D96;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.contactInfoBx .box .text h3{
+	font-weight: 700;
+	font-size: 20px;
+	color: #818D96;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+
+.contacts{
+	background: #DDE6E2;
+}
+.contacts .heading h2{
+	color: #818D96;
+}
+
+.contactInfoBx{
+	position: relative;
+	display: block;
+}
+.contactInfoBx .box{
+	position: relative;
+	padding: 15px 0;
+	display: flex;
+	margin-left: 1px;
+}
+
+
+
+/*Responsive*/
+@media(max-width: 1024px){
+	header,
+	header.sticky{
+		padding: 20px 50px;
+		z-index: 1000;
+		background: #B5CEC3;
+	}
+	.menu{
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		display: block;
+		padding: 200px 65px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	.menu.active{
+		left: 0;
+	}
+	header ul li a{
+		display: inline-block;
+		color: #111;
+		font-size: 24px;
+		margin: 10px;
+	}
+	.toggle{
+		width: 40px;
+		height: 40px;
+		background: url("../img/menu.png") no-repeat center;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	.toggle.active{
+		background: url("../img/close.png") no-repeat center;
+		background-size: 25px;
+		cursor: pointer;
+	}
+	header.sticky .toggle{
+		filter: invert(1);
+	}
+	section{
+		padding: 100px 50px;
+	}
+	.banner{
+		padding:150px 50px 100px;
+	}
+	.banner h2, h3{
+		font-size: 2.2em;
+	}
+
+	.banner .textBx{
+		left: 0;
+		padding: 20px 50px;
+	}
+
+	.banner h3{
+		font-size: 30px;
+	}
+	.heading h2{
+		font-size: 44px;
+	}
+	.contentBx h3{
+		font-size: 20px;
+	}
+
+	.contentBx p{
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.banner .contentBx h2{
+		text-align: center;
+		font-size: 1.5em;
+		padding-left: 0;
+	}
+
+	.banner .contentBx h3{
+		text-align: center;
+		font-size: 1.5em;
+		padding-left: 0;
+	}
+
+	.banner img{
+		padding-left: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+	}
+
+	.content{
+		flex-direction: column;
+	}
+	.w50{
+		max-width: 100%;
+		align-items: center;
+	}
+	.about img {
+		padding-left: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.work .content .workBx{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.work .content .workBx img{
+		width: 100%;
+	}
+
+	.services .content .servicesBx{
+		width: 100%;
+	}
+
+	.services .content .servicesBx h2{
+		font-size: 1.5em;
+	}
+
+	.services .content{
+		margin-top: 0;
+	}
+}
+
+@media(max-width: 600px) {
+	header,
+	header.sticky {
+		padding: 20px 20px;
+		z-index: 1000;
+	}
+	section{
+		padding: 100px 20px;
+	}
+	.banner{
+		padding:150px 20px 100px;
+	}
+
+	.about img{
+		padding-left: 15%;
+		margin: auto;
+	}
+
+	.banner .textBx{
+		left: 0;
+		padding: 20px 20px;
+	}
+
+	.banner h2, h3{
+		font-size: 2em;
+	}
+
+	/*.speach {*/
+	/*	margin-left: 45px;*/
+	/*	margin-top: 15px;*/
+	/*}*/
+	/*.speach p {*/
+	/*	font-size: 30px;*/
+	/*}*/
+	.contactInfo{
+		margin: 20px 0;
+	}
+
+}
+
+
+
+
